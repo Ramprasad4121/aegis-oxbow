@@ -67,6 +67,13 @@ sequenceDiagram
     Vault->>Receiver: Distributes BNB securely to unlinked wallets
     UI->>User: Displays Anonymous Tx Receipt & Success State
 ```
+##  Scalability Metrics: How Big is a Batch?
+A common question is: *How many users can we actually fit into one Privacy Bus?*
+
+* **Theoretical Limit (1,400+):** BSC features a massive block gas limit of 140M. Assuming an average of 100k gas per complex vault withdrawal, a single block can mathematically hold 1,400 batched intents.
+* **Practical Limit (100):** To prevent RPC timeouts and ensure 100% execution success, Aegis-Oxbow caps a single Super-Transaction at 100 intents. 
+* **Dynamic AI Execution:** The system does not strictly wait for the cap. If the pool has 45 intents and the `brain.js` agent predicts a temporary drop in network base fees, it executes the batch immediately to secure the cheapest possible blockspace.
+
 
 ##  User Journey
 
