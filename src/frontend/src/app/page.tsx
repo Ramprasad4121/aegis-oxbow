@@ -141,11 +141,8 @@ export default function Home() {
       {/* ── Footer ───────────────────────────────────────────────────────── */}
       <footer style={{
         borderTop: '1px solid var(--border)', padding: '10px 24px',
-        display: 'flex', justifyContent: 'space-between', alignItems: 'center'
+        display: 'flex', justifyContent: 'flex-end', alignItems: 'center'
       }}>
-        <span style={{ fontFamily: 'var(--mono)', fontSize: '10px', color: 'var(--dim)' }}>
-          AEGIS-OXBOW // BNB CHAIN x YZI LABS HACKATHON 2025
-        </span>
         <span style={{ fontFamily: 'var(--mono)', fontSize: '10px', color: 'var(--dim)' }}>
           MIT LICENSE // OPEN SOURCE
         </span>
