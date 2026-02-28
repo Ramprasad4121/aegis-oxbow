@@ -57,10 +57,10 @@ sequenceDiagram
 
 ##  Live Deployments & Ecosystem Fit
 
-* **Live Application (Vercel):** `https://aegis-oxbow.vercel.app/`
+* **Live Application (Vercel):** https://aegis-oxbow.vercel.app/
 * **AegisVault (BSC Testnet Verified):** `0xa8e68C396aa2daB84fcc46647842E22b0dd392b4`
-* **Explorer Link:** `https://testnet.bscscan.com/address/0xa8e68C396aa2daB84fcc46647842E22b0dd392b4`
-* **Golden Demo Transaction (1 Batch = Multiple Transfers):** `https://testnet.bscscan.com/tx/0xcc3129e0c7b561890d3ad03666321157e6315425c156a58b582e28e1400c52b6`
+* **Explorer Link:** https://testnet.bscscan.com/address/0xa8e68C396aa2daB84fcc46647842E22b0dd392b4
+* **Golden Demo Transaction (1 Batch = Multiple Transfers):** https://testnet.bscscan.com/tx/0xcc3129e0c7b561890d3ad03666321157e6315425c156a58b582e28e1400c52b6
 
 > **Note:** The AI Relayer backend is hosted on Render's Free Tier. If the Relayer Status says 'OFFLINE', please wait 30-60 seconds for the container to wake up from its sleep cycle.
 
