@@ -24,11 +24,15 @@ By compressing blockspace usage by up to 90%, Aegis-Oxbow multiplies effective T
 ---
 
 ##  Key Innovations
-1. **Intent-Based Batching:** Users sign an "intent" to move funds anonymously. The protocol bundles these intents, acting as an ultra-efficient "Privacy Bus" rather than 100 separate Ubers.
-2. **Local AI Gas Predictor (`brain.js`):** The Relayer runs a deterministic, local neural network that analyzes block-by-block base fees. It predicts the optimal millisecond to execute the batch, securing the absolute cheapest blockspace without relying on paid external APIs.
-3. **Account Abstraction (Paymaster):** The AI Relayer sponsors the gas for the final execution, ensuring the user's fresh destination wallet remains completely disconnected from the source wallet.
+1. Intent-Based Batching
+Users don't sign a transaction; they sign an "intent" to move funds. This allows the protocol to act as an ultra-efficient "Privacy Bus," rather than 100 separate "Ubers" clogging the digital highway.
 
----
+2. Local AI Gas Predictor (brain.js)
+The Relayer runs a deterministic, local neural network that analyzes block-by-block base fees. By predicting the optimal millisecond to execute a batch, it secures the absolute cheapest blockspace without relying on latency-heavy external APIs.
+
+3. Account Abstraction (Paymaster)
+The AI Relayer sponsors the gas for the final execution through a Paymaster contract. This is the "missing link" for privacy: it ensures the user's fresh destination wallet has no direct on-chain link (via gas funding) to the source wallet.
+
 
 ##  System Architecture
 
